@@ -15,13 +15,9 @@
     ]
   },
   "mixins": [
-    "block_sdu.mixins.json",
-    {
-      "environment": "client"
-    }
-  ],
+    "block_sdu.mixins.json"    ],
   "depends": {
-    "fabricloader": ">=${loader_version}",
+    "fabricloader": "*",
     "fabric": "*",
     "minecraft": "${minecraft_version}"
   }
