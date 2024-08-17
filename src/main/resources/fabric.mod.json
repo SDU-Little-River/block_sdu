@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "block_sdu",
+  "version": "${version}",
+  "name": "block_sdu",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "environment": "*",
+  "entrypoints": {
+
+    "main": [
+      "top.block_sdu.Block_sdu"
+    ]
+  },
+  "mixins": [
+    "block_sdu.mixins.json",
+    {
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
